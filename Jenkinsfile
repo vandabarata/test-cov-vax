@@ -17,4 +17,12 @@ pipeline {
       }
     }      
   }
+  post {
+    success {
+      telegramSend 'Go schedule yourself the vaccine!'
+    }
+    failure {
+      telegramSend 'Hello Failure'
+    }
+  }
 }
