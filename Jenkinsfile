@@ -22,9 +22,6 @@ pipeline {
     success {
       sendTelegram('Go schedule yourself the vaccine!')
     }
-    failure {
-      sendTelegram('Hello Failure')
-    }
   }
 }
 
