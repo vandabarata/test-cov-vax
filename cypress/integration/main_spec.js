@@ -7,7 +7,7 @@ describe("vax age", () => {
         .invoke("text")
         .should((title) => {
             if (title.includes("30")) {
-                expect("false").to.equal("false")
+                expect("false").to.equal("true")
             } 
             else (
                 expect("true").to.equal("true") 
